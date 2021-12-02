@@ -1,0 +1,135 @@
+html {
+    background-color: black;
+}
+.section {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.header {
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+    color:tomato;
+    background-color: yellow;
+    width: 100%;
+    margin-top: -10px;
+    padding:70px;
+}
+.title {
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+    background-color:violet;
+    width: 100%;
+    padding: 10px;
+    margin-top: -36px;
+}
+.nav {
+    width: 102%;
+    align-items: center;
+    margin-top: -33px;
+}
+.button {
+    background-color: blue;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 0px;
+    font-size: 17px;
+    width: 16.66%;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover {
+    background-color:darkblue;
+}
+.button2 {
+    background-color: crimson;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 11%;
+    text-align: center;
+    text-decoration: none;
+}
+.aboutme {
+    
+}
+#aboutme {
+    text-align: left;
+    width:auto;
+}
+.form {
+    margin: auto;
+}
+#fname {
+    width: 30%;
+    text-align: start;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding: 12px;
+}
+#lname {
+    width: 30%;
+    text-align: start;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding: 12px;
+}
+#email {
+    width: 50%;
+    text-align: start;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding: 12px;
+}
+#subject {
+    width: 40%;
+    text-align: start;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding: 12px;
+}
+#message {
+    width: 60%;
+    text-align: start;
+    border-radius: 5px;
+    font-size: 12pt;
+    padding: 12px;
+}
+#link {
+    padding:2px;
+    display: inline-block;
+}
+#experience-icon {
+    width: 10%;
+}
+.aboutm {
+    background-color: dimgray;
+    padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+}
+.img-and-word {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: center;
+    margin: auto;
+    background-color:orange;
+}
+#label {
+    font-size: 25px;
+    color:white;
+}
+div {
+    display: block;
+    color: white;
+}
