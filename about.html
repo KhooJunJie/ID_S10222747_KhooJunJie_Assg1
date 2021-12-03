@@ -1,51 +1,87 @@
-<link rel="stylesheet" href="style.css">
-
 <html>
-<div class="section">
-    <h1 class="header">Personal Portfolio</h1>
 
-    <div class="nav">
-        <a href="index.html" class="button">Home</a>
-        <a href="about.html" class="button">About</a>
-        <a href="experiences.html" class="button">Experiences</a>
-        <a href="skills.html" class="button">Skills</a>
-        <a href="projects.html" class="button">Projects</a>
-        <a href="contact.html" class="button">Contact</a>
-    </div><br><br>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        button {
+          background-color: green;
+          width: 100%;
+          height: 40px;
+        }
+        a {
+          color: white;
+          font-size: 24px;
+        }
+        .container {
+          display: flex;
+        }
+        .split {
+          width: 45%;
+          margin: 2%;
+          flex-grow: 0;
+        }
+        img {
+          max-width: 100%;
+          background-size: cover;
+        }
+        @media screen and (max-width: 920px) {
+          .container {
+            flex-wrap: wrap;
+          }
+          .split {
+            flex-basis: 100%;
+            flex-shrink: 0;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        </style>
+</head>
+
+<body>
+    <div class="section">
+        <h1 class="header">Personal Portfolio</h1>
+
+        <div id="navbar">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+            <a href="experiences.html" class="button">Experiences</a>
+            <a href="skills.html" class="button">Skills</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="contact.html" class="button">Contact</a>
+        </div><br><br>
 
 
+    <h1 class="title">About Me</h1>
 
+    <div class="img-and-word">
+        <img id="about-icon" src="libraries/selfimg.jpg"><br><br>
+        <section>
+            <h1 style="font-size: 50px;">Khoo Jun Jie</h1>
+            <p id="aboutme">
+                My name is Khoo Jun Jie, I am 18 years old. I am currently
+                pursuing a diploma in Information Technology (IT) course in Ngee
+                Ann Polytechnic. I chose the course Information Technology as I
+                thought that Information Technology is a very interesting course 
+                and technology will be widely used and technology professionals
+                will be highly demanded in the future, thus it will be very
+                important to study information technology. Furthermore,
+                Information Technology has a broad-based curriculum, I can learn
+                many modules about technology from this course to build a strong
+                foundation in Information Technology fundamentals, so I can
+                choose which IT sector I am most interested in, and I am more
+                capable of to pursue in my further studies in the University.
+            </p>
+        </section>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 
-
-
-
-
-
-
-<h1 class="title">About Me</h1>
-
-<div class="img-and-word">
-    <img id="about-icon" src="https://thumbs.dreamstime.com/b/experience-icon-trendy-
-    logo-concept-white-background-startup-strategy-success-
-    collection-suitable-use-web-apps-131195007.jpg" style="width: 250px; height: 280px; margin: 30px">
-
-    <p id="aboutme">
-        My name is Khoo Jun Jie, I am 18 years old. I am currently
-        pursuing a diploma in Information Technology (IT) course in Ngee
-        Ann Polytechnic. I chose the course Information Technology as I
-        thought that Information Technology is a very interesting course 
-        and technology will be widely used and technology professionals
-        will be highly demanded in the future, thus it will be very
-        important to study information technology. Furthermore,
-        Information Technology has a broad-based curriculum, I can learn
-        many modules about technology from this course to build a strong
-        foundation in Information Technology fundamentals, so I can
-        choose which IT sector I am most interested in, and I am more
-        capable of to pursue in my further studies in the University.
-    </p>
-</div>
-
-</div>
-
-<footer style="text-align: center; padding:5px; background-color: white">Made by Khoo Jun Jie</footer>
+<footer class="footer">Made by Khoo Jun Jie</footer>
 </html>

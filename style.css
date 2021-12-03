@@ -1,4 +1,4 @@
-html {
+body {
     background-color: black;
 }
 .section {
@@ -11,9 +11,11 @@ html {
     font-style: oblique;
     font-size: 50px;
     color:tomato;
-    background-color: yellow;
-    width: 100%;
+    background-image: url('libraries/headerimage.jpg');
+    background-size: cover;
+    width: 90%;
     margin-top: -10px;
+    margin-bottom: -10px;
     padding:70px;
 }
 .title {
@@ -25,10 +27,9 @@ html {
     padding: 10px;
     margin-top: -36px;
 }
-.nav {
+#navbar {
     width: 102%;
     align-items: center;
-    margin-top: -33px;
 }
 .button {
     background-color: blue;
@@ -55,16 +56,14 @@ html {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 11%;
+    width: auto;
     text-align: center;
     text-decoration: none;
 }
-.aboutme {
-    
-}
-#aboutme {
+/*index.html*/
+.menu {
     text-align: left;
-    width:auto;
+    width: auto;
 }
 .form {
     margin: auto;
@@ -108,21 +107,64 @@ html {
     padding:2px;
     display: inline-block;
 }
-#experience-icon {
-    width: 10%;
+
+#about-icon {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
 }
-.aboutm {
-    background-color: dimgray;
-    padding-bottom: 20px;
-    width: 100%;
-    height: auto;
+#experiences-icon {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+}
+#skills-icon {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+}
+#projects-icon {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+}
+#contact-icon {
+    width: 30%;
+    height: 30%;
+    margin: 10px;
+}
+#dp1 {
+    width: 50%;
+    height: 50%;
+    margin: 30px;
+}
+#dp2 {
+    width: 50%;
+    height: 50%;
+    margin: 30px;
+}
+#dp3 {
+    width: 50%;
+    height: 50%;
+    margin: 30px;
+}
+#dp4 {
+    width: 50%;
+    height: 50%;
+    margin: 30px;
+}
+#dp5 {
+    width: 50%;
+    height: 50%;
+    margin: 30px;
 }
 .img-and-word {
     display:flex;
     flex-direction:row;
-    width:100%;
+    width:80%;
     justify-content: center;
     margin: auto;
+    margin-bottom: 10px;
     background-color:orange;
 }
 #label {
@@ -132,4 +174,18 @@ html {
 div {
     display: block;
     color: white;
+}
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: lightgray;
+    margin-top: 100px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+#aboutme {
+    padding-bottom: 50px;
 }

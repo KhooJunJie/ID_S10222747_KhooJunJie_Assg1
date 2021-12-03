@@ -3,60 +3,140 @@
 <head>
 <title>Personal Portfolio</title>
 <link rel="stylesheet" href="style.css">
-<link rel="scripting" href="script.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    button {
+      background-color: green;
+      width: 100%;
+      height: 40px;
+    }
+    a {
+      color: white;
+      font-size: 24px;
+    }
+    .container {
+      display: flex;
+    }
+    .split {
+      width: 45%;
+      margin: 2%;
+      flex-grow: 0;
+    }
+    img {
+      max-width: 100%;
+      background-size: cover;
+    }
+    @media screen and (max-width: 920px) {
+      .container {
+        flex-wrap: wrap;
+      }
+      .split {
+        flex-basis: 100%;
+        flex-shrink: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    </style>
 </head>
 <body>
 
 <div class="section">
     <h1 class="header">Personal Portfolio</h1>
 
-    <div class="nav">
+    <div id="navbar">
         <a href="index.html" class="button">Home</a>
         <a href="about.html" class="button">About</a>
         <a href="experiences.html" class="button">Experiences</a>
         <a href="skills.html" class="button">Skills</a>
         <a href="projects.html" class="button">Projects</a>
         <a href="contact.html" class="button">Contact</a>
-    </div><br><br><br>
+    </div><br><br>
 
 
 <h1 class="title">Home Page</h1>
 
 <div class="home">
-    <h1>Hello! Welcome to my personal portfolio!</h1>
+
+    <h1 style="text-align: center; font-size: 40px;">Hello! Welcome to my personal portfolio!</h1>
+
     <div id="home">
-        <div id=experience>
-            <div>
-            <img id="experience-icon" src="https://thumbs.dreamstime.com/z/experience-icon-
-            trendy-logo-concept-white-background-startup-strategy-
-            success-collection-suitable-use-web-apps-131195007.jpg">
-            </div>
-            <div>
-                <h3>About Me</h3>
-                <p class="aboutme">
+
+        <div class="img-and-word">
+                <img id="about-icon" src="https://thumbs.dreamstime.com/b/experience-icon-trendy-logo-concept-white-background-startup-strategy-success-collection-suitable-use-web-apps-131195007.jpg">
+            <section style="margin: 30px;">
+                <h3 style="height: 10%">About Me</h3>
+                <p class="menu">
                     My name is Khoo Jun Jie, I am 18 years old. I am currently
                     pursuing a diploma in Information Technology (IT) course in Ngee
                     Ann Polytechnic.
                 </p>
-                <a href="about.html" class="button2">Read More</a><br><br>
-            </div>
+                <div>
+                    <a href="about.html" class="button2">Read More</a><br><br>
+                </div>
+            </section>
+        </div>
+        
+        <div class="img-and-word">
+            <section style="margin: 30px;">
+                <h3 style="height: 10%">My Experiences</h3>
+                <p class="menu">
+                    Some information about me, what schools did I study at and graduate from, and my work experiences.
+                </p>
+                <div>
+                    <a href="experiences.html" class="button2">Read More</a><br><br>
+                </div>
+            </section>
+            <img id="experiences-icon" src="https://www.penserchanger.com/wp-content/uploads/2017/02/Gagner-de-l-experience.jpg">
         </div>
 
-        
-        <h3>My Experiences</h3>
-        <a href="experiences.html" class="button2">Read More</a><br><br>
+        <div class="img-and-word">
+            <img id="skills-icon" src="https://previews.123rf.com/images/dxinerz/dxinerz1712/dxinerz171200133/91015173-team-training-skills-icon-vector-image-can-also-be-used-for-soft-skills-suitable-for-mobile-apps-web.jpg">
+            <section style="margin: 30px;">
+                <h3 style="height: 10%">Skills, Competencies & Interests</h3>
+                <p class="menu">
+                    What are some of the core skills, technical skills that I have. What am I capable of and my interests.
+                </p>
+                <div>
+                    <a href="skills.html" class="button2">Read More</a><br><br>
+                </div>
+            </section>
+        </div>
 
-        <h3>Skills, Competencies & Interests</h3>
-        <a href="skills.html" class="button2">Read More</a><br><br>
+        <div class="img-and-word">
+            <section style="margin: 30px;">
+                <h3 style="height: 10%">Projects Done</h3>
+                <p class="menu">
+                    Here are some of the school projects done by myself.
+                </p>
+                <div>
+                    <a href="projects.html" class="button2">Read More</a><br><br>
+                </div>
+            </section>
+            <img id="projects-icon" src="https://blog.hubbado.com/content/images/2020/01/projectmanager.png">
+        </div>
 
-        <h3>Projects Done</h3>
-        <a href="projects.html" class="button2">Read More</a><br><br>
-
-        <h3>Contact Me</h3>
-        <a href="contact.html" class="button2">Read More</a><br><br>
+        <div class="img-and-word">
+            <img id="contact-icon" src="https://image.shutterstock.com/image-illustration/contact-me-handwritten-onto-white-260nw-98035142.jpg">
+            <section style="margin: 30px;">
+                <h3 style="height: 10%">Contact Me</h3>
+                <p class="menu">
+                    Feel free to contact me here if you have any questions.
+                </p>
+                <div>
+                    <a href="contact.html" class="button2">Read More</a><br><br>
+                </div>
+            </section>
+        </div>
     </div>
 </div><br>
-
+</div>
+<script src="script.js"></script>
 </body>
+<footer class="footer">Made by Khoo Jun Jie</footer>
 </html>
-

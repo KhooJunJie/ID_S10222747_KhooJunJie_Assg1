@@ -1,65 +1,112 @@
-<link rel="stylesheet" href="style.css">
-
 <html>
-<div class="section">
-    <h1 class="header">Personal Portfolio</h1>
 
-    <div class="nav">
-        <a href="index.html" class="button">Home</a>
-        <a href="about.html" class="button">About</a>
-        <a href="experiences.html" class="button">Experiences</a>
-        <a href="skills.html" class="button">Skills</a>
-        <a href="projects.html" class="button">Projects</a>
-        <a href="contact.html" class="button">Contact</a>
-    </div><br><br>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+        }
+        button {
+          background-color: green;
+          width: 100%;
+          height: 40px;
+        }
+        a {
+          color: white;
+          font-size: 24px;
+        }
+        .container {
+          display: flex;
+        }
+        .split {
+          width: 45%;
+          margin: 2%;
+          flex-grow: 0;
+        }
+        img {
+          max-width: 100%;
+          background-size: cover;
+        }
+        @media screen and (max-width: 920px) {
+          .container {
+            flex-wrap: wrap;
+          }
+          .split {
+            flex-basis: 100%;
+            flex-shrink: 0;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        </style>
+</head>
+    
+<body>
+    <div class="section">
+        <h1 class="header">Personal Portfolio</h1>
+
+        <div id="navbar">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+            <a href="experiences.html" class="button">Experiences</a>
+            <a href="skills.html" class="button">Skills</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="contact.html" class="button">Contact</a>
+        </div><br><br>
 
 
-    <h1 class="title">My Skills</h1>
-    <h2>Core Skills</h2>
-    <ul>
-        <li>Flexibility</li>
-        <li>Problem-Solving</li>
-        <li>Teamwork</li>
-        <li>Responsibility</li>
-        <li>Integrity</li>
-        <li>Motivation</li>
-    </ul>
+        <h1 class="title">My Skills</h1>
+        <h2 style="color: paleturquoise;">Core Skills</h2>
+        <ul>
+            <li>Flexibility</li>
+            <li>Problem-Solving</li>
+            <li>Teamwork</li>
+            <li>Responsibility</li>
+            <li>Integrity</li>
+            <li>Motivation</li>
+        </ul>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Microsoft Word</li>
-        <li>Microsoft Excel</li>
-        <li>Microsoft Power BI</li>
-        <li>Microsoft PowerPoint</li>
-        <li>Adobe Illustrator</li>
-        <li>Adobe XD</li>
-        <li>Visual Studio 2019</li>
-        <li>Visual Studio Code</li>
-    </ul>
+        <h2 style="color: paleturquoise;">Technical Skills</h2>
+        <ul>
+            <li>Microsoft Word</li>
+            <li>Microsoft Excel</li>
+            <li>Microsoft Power BI</li>
+            <li>Microsoft PowerPoint</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe XD</li>
+            <li>Visual Studio 2019</li>
+            <li>Visual Studio Code</li>
+        </ul>
 
-    <h2>Some Languages I Learnt</h2>
-    <ul>
-        <li>Python</li>
-        <li>C#</li>
-        <li>SQL</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
+        <h2 style="color: paleturquoise;">Some Languages I Learnt</h2>
+        <ul>
+            <li>Python</li>
+            <li>C#</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
 
-    <h2>Competencies</h2>
-    <p>
-        I am capable of designing and executing with Adobe Illustrator, 
-        coding programmes using Python and C#. I am also capable of creating
-        a wireframe using Adobe XD, coding a website using HTML, 
-        together with CSS and Javascript to make the website much better.
-    </p>
+        <h2 style="color: paleturquoise;">Competencies</h2>
+        <p>
+            I am capable of designing and executing with Adobe Illustrator, 
+            coding programmes using Python and C#. I am also capable of creating
+            a wireframe using Adobe XD, coding a website using HTML, 
+            together with CSS and Javascript to make the website much better.
+        </p>
 
-    <h2>Interests</h2>
-    <p>
-        I am interested in basically everything about computer and 
-        technologies. I am mroe interested in coding programmes for others 
-        to use.
-    </p>
-</div>
+        <h2 style="color: paleturquoise;">Interests</h2>
+        <p>
+            I am interested in basically everything about computer and 
+            technologies. I am mroe interested in coding programmes for others 
+            to use. I also like to play badminton during my free time.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<footer class="footer">Made by Khoo Jun Jie</footer>
 </html>
